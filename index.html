@@ -2,14 +2,220 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Bolduc-St-Aubin - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
-    <main>
-        <p>Hi, I am a mathematician. Here are my top projects.</p>
+
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="profile-card">
+            <div class="profile-pic-container">
+                <!-- Replace 'photo.jpg' with your actual image file name -->
+                <img src="photo.jpg" alt="Samuel Bolduc-St-Aubin" class="profile-pic">
+            </div>
+            <h1>Samuel Bolduc-St-Aubin</h1>
+            <p class="title">Mathematician</p>
+            <p class="tags">Applied Mathematics • Data Science • Climate Modeling • Numerical Analysis • Dynamical Systems</p>
+            
+            <div class="contact-info">
+                <p><span class="icon">📍</span> Auckland, New Zealand</p>
+                <p><a href="mailto:samuelbolduc44@gmail.com"><span class="icon">✉️</span> Email</a></p>
+                <p><a href="https://www.linkedin.com/in/samuel-bolduc-st-aubin-554572374/" target="_blank"><span class="icon">🔗</span> LinkedIn</a></p>
+                <p><a href="https://github.com/samuelbolduc44" target="_blank"><span class="icon">💻</span> GitHub</a></p>
+            </div>
+        </div>
+        
+        <nav class="navigation">
+            <ul>
+                <li class="active"><a href="#about">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#conferences">Conferences & Talks</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        
+        <!-- About Section -->
+        <section id="about" class="content-card">
+            <h2>ABOUT ME</h2>
+            <p>
+                I am an applied mathematician specialising in nonlinear dynamics, scientific computing, and conceptual climate modelling. My research focuses on infinite-dimensional dynamical systems, particularly delay differential equations (DDEs), to understand the fundamental mechanisms driving climate variability. By combining rigorous mathematical proofs with advanced numerical methods, I isolate and analyse the elementary physical processes that govern complex climate interactions. My core expertise lies in analytical and numerical bifurcation theory, resonance phenomena, and semiflow dynamics.
+            </p>
+            <p>
+                Beyond research, I have extensive experience tutoring undergraduate mathematics and regularly present my findings at academic conferences.
+            </p>
+            <p>
+                My technical toolkit includes Julia, MATLAB, and Java, alongside numerical continuation software like DDE-BifTool and custom-built simulators for ordinary, delay, and state-dependent delay differential equations.
+            </p>
+            <p>
+                here is my linkedin which has all the important information that is needed: <a href="https://www.linkedin.com/in/samuel-bolduc-st-aubin-554572374/" target="_blank">https://www.linkedin.com/in/samuel-bolduc-st-aubin-554572374/</a>.
+            </p>
+        </section>
+
+        <!-- Projects Section (Placeholder) -->
+        <section id="projects" class="content-card">
+            <h2>PROJECTS</h2>
+            <div class="item">
+                <h3>Project Title (Coming Soon)</h3>
+                <p class="description">This section will be updated with details of my key projects in mathematics, data science, and climate research.</p>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="content-card">
+            <h2>PUBLICATIONS</h2>
+            
+            <div class="item">
+                <span class="date">2026</span>
+                <h3>Seasonal forcing dominated dynamics of a piecewise smooth Ghil-Zaliapin-Thompson ENSO model</h3>
+                <p><strong>Bolduc-St-Aubin, S.</strong> and Humphries, Antony R.</p>
+                <p class="description"><em>Journal of Computational Dynamics</em>, Vol. 15, No. 1, pp. 113–162. DOI: <a href="https://doi.org/10.3934/jcd.2026011" target="_blank">10.3934/jcd.2026011</a></p>
+            </div>
+
+            <div class="item">
+                <span class="date">2026</span>
+                <h3>Resonance structure of a periodically forced delay differential equation model for the El Niño–Southern Oscillation</h3>
+                <p><strong>Bolduc-St-Aubin, S.</strong>, Subramanian, P., and Krauskopf, B.</p>
+                <p class="description">Preprint on arXiv: <a href="https://arxiv.org/abs/2607.00386" target="_blank">2607.00386</a> [math.DS]</p>
+            </div>
+
+            <div class="item">
+                <span class="date">2024</span>
+                <h3>Feedback with implicit state-dependent delay in a conceptual model of El Niño</h3>
+                <p><strong>Bolduc-St-Aubin, S.</strong>, Subramanian, P., and Krauskopf, B.</p>
+                <p class="description"><em>Proceedings of ENOC 2024</em>, Delft, The Netherlands.</p>
+            </div>
+        </section>
+
+        <!-- Conferences & Talks Section -->
+        <section id="conferences" class="content-card">
+            <h2>CONFERENCES & TALKS</h2>
+
+            <div class="item">
+                <span class="date">Jun 2026</span>
+                <h3><a href="https://www.mathematics.org.au/sys/pages/plain.php?conf_id=69&page_id=39" target="_blank">Mathematical Modeling & Dynamics with Delay</a></h3>
+                <p>Kingston, Ontario, Canada</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Feb 2026</span>
+                <h3><a href="https://www.mathematics.org.au/sys/pages/plain.php?conf_id=69&page_id=39" target="_blank">62<sup>nd</sup> Conference of the Australian and New Zealand Industrial and Applied Mathematics (ANZIAM) Division</a></h3>
+                <p>Canberra, Australia</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Nov 2025</span>
+                <h3><a href="https://www.ivvy.com.au/event/COTEX6/home.html" target="_blank">2025 Colloquium of the New Zealand Mathematical Society (NZMS)</a></h3>
+                <p>Hamilton, New Zealand</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Nov 2025</span>
+                <h3><a href="https://www.math.auckland.ac.nz/~berndk/acdc/" target="_blank">Auckland Workshop on Climate Dynamics Challenges</a></h3>
+                <p>Auckland, New Zealand</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Aug 2025</span>
+                <h3>2025 Gene Golub SIAM Summer School on Frontiers in Multi-Dimensional Pattern Formation</h3>
+                <p>Concordia University — Montréal, Québec, Canada</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Jul 2025</span>
+                <h3><a href="https://www.siam.org/conferences-events/siam-conferences/ds25/" target="_blank">The Third Joint SIAM/CAIMS Annual Meetings (AN25)</a></h3>
+                <p>Montréal, Québec, Canada</p>
+            </div>
+
+            <div class="item">
+                <span class="date">May 2025</span>
+                <h3><a href="https://www.siam.org/conferences-events/siam-conferences/ds25/" target="_blank">19<sup>th</sup> SIAM Conference on Applications of Dynamical Systems (DS25)</a></h3>
+                <p>Denver, Colorado, United States</p>
+            </div>
+
+            <div class="item">
+                <span class="date">May 2025</span>
+                <h3>Seminar: Centre de Recherches Mathématiques (CRM)</h3>
+                <p>McGill University, Montréal, Canada</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Feb 2025</span>
+                <h3><a href="https://www.mathematics.org.au/sys/pages/plain.php?conf_id=67&page_id=39" target="_blank">61<sup>st</sup> Conference of the ANZIAM Division</a></h3>
+                <p>Coffs Harbour, New South Wales, Australia</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Dec 2024</span>
+                <h3><a href="https://ms-meet-2024.blogs.auckland.ac.nz/" target="_blank">Joint Meeting of the NZMS, AustMS, and AMS</a></h3>
+                <p>Auckland, New Zealand</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Nov 2024</span>
+                <h3><a href="https://nzmasp.org.nz" target="_blank">24<sup>th</sup> New Zealand Mathematics and Statistics Postgraduate Conference (NZMASP)</a></h3>
+                <p>Christchurch, New Zealand</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Aug 2024</span>
+                <h3><a href="https://dynamicsdays.eu/bremen2024/" target="_blank">44<sup>th</sup> Dynamics Days Europe (DDE)</a></h3>
+                <p>Bremen, Germany</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Jul 2024</span>
+                <h3><a href="https://enoc24.dryfta.com" target="_blank">11<sup>th</sup> European Nonlinear Dynamics Conference (ENOC)</a></h3>
+                <p>Delft, Netherlands</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Nov 2023</span>
+                <h3><a href="https://nzmasp2023.wordpress.com" target="_blank">23<sup>rd</sup> New Zealand Mathematics and Statistics Postgraduate Conference (NZMASP)</a></h3>
+                <p>Wellington, New Zealand</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Nov 2023</span>
+                <h3><a href="https://sms.wgtn.ac.nz/apps/nzms2023-abstract/" target="_blank">2023 Colloquium of the New Zealand Mathematical Society (NZMS)</a></h3>
+                <p>Wellington, New Zealand</p>
+            </div>
+
+            <div class="item">
+                <span class="date">Jun 2022</span>
+                <h3><a href="https://caims.ca/annual-meeting-2022/" target="_blank">Annual Meeting 2022 of the Canadian Society of Applied and Industrial Mathematics (CAIMS)</a></h3>
+                <p>Kelowna, British Columbia, Canada</p>
+            </div>
+        </section>
+
+        <!-- Education Section (Placeholder) -->
+        <section id="education" class="content-card">
+            <h2>EDUCATION</h2>
+            <div class="item">
+                <span class="date">YYYY–YYYY</span>
+                <h3>Ph.D. in Mathematics (Placeholder)</h3>
+                <p>University Name, City</p>
+                <p class="description">Thesis Title: "Title of your Ph.D. thesis goes here"</p>
+            </div>
+            <div class="item">
+                <span class="date">YYYY–YYYY</span>
+                <h3>M.Sc. in Mathematics (Placeholder)</h3>
+                <p>University Name, City</p>
+            </div>
+        </section>
+
     </main>
+</div>
+
 </body>
 </html>
