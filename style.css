@@ -7,11 +7,11 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f7f6f3; /* Light beige background */
+    background-color: #f7f6f3; /* Light beige background from reference */
     color: #2d3748;
     line-height: 1.6;
     padding: 40px 20px;
-    font-size: 15px; /* Reverted global font size */
+    font-size: 15px; /* Precise font size reverted */
 }
 
 /* --- MAIN CONTAINER LAYOUT --- */
@@ -33,7 +33,7 @@ body {
 
 /* --- SIDEBAR STYLING --- */
 .sidebar {
-    background-color: #0a0e31; /* Dark blue from picture */
+    background-color: #0a0e31; /* Dark navy blue from new picture */
     color: white; /* All text white */
     border-radius: 16px;
     padding: 30px 24px;
@@ -97,7 +97,7 @@ body {
     text-decoration: underline;
 }
 
-/* Navigation Links */
+/* --- Navigation Links styling --- */
 .navigation ul {
     list-style: none;
     text-align: left;
@@ -108,7 +108,7 @@ body {
     padding: 10px 16px;
     border-radius: 8px;
     text-decoration: none;
-    color: white;
+    color: white; /* All navigation links white */
     font-weight: 500;
     font-size: 0.95rem;
     transition: all 0.2s ease;
@@ -118,9 +118,11 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* --- THE FIX: This rule removes the yellow highlight. --- */
+/* Target the active link and ensure its background is transparent. */
 .navigation li.active a {
-    background-color: #fefcbf; /* Active page highlight */
-    color: #744210;
+    background-color: transparent !important; /* Forces the removal of any color */
+    color: white !important; /* Ensures the text stays white */
     font-weight: 600;
 }
 
@@ -150,6 +152,8 @@ body {
 
 .content-card p {
     margin-bottom: 16px;
+    font-size: 0.98rem;
+    color: #2d3748;
 }
 
 .content-card a {
@@ -161,16 +165,16 @@ body {
     text-decoration: underline;
 }
 
-/* --- LIST ITEM LAYOUT (Dates & Details) --- */
+/* --- LIST ITEM LAYOUT (Dates in left col, details in right) --- */
 .item {
     display: grid;
-    /* Increased margin for the left column for long location text */
+    /* Precise width allocation for date column to match image_3.png style */
     grid-template-columns: 140px 1fr;
     gap: 16px;
     margin-bottom: 24px;
 }
 
-/* Stack on mobile */
+/* Stack vertically on mobile */
 @media (max-width: 600px) {
     .item {
         grid-template-columns: 1fr;
@@ -178,11 +182,11 @@ body {
     }
 }
 
-/* Container for date and location text in left column */
+/* Left column container (Date & Location) */
 .item-meta {
     display: flex;
     flex-direction: column;
-    text-align: right; /* Aligned right to main content */
+    text-align: right; /* Correlates to image_3.png style */
 }
 
 @media (max-width: 600px) {
@@ -201,12 +205,13 @@ body {
 
 /* Specific styling for location text in left column */
 .item-meta .location {
-    font-size: 0.82rem; /* Adjusted size */
+    font-size: 0.82rem;
     color: #718096; /* Muted grey */
     margin-top: 4px;
     line-height: 1.4;
 }
 
+/* Right column container (Degree/Job Specifics) */
 .item-details h3 {
     font-size: 1rem; /* Reverted h3 size */
     font-weight: 600;
@@ -214,20 +219,23 @@ body {
     margin-bottom: 4px;
 }
 
-/* Styling for publication details (H3 within main details) */
-.item-details h3 a {
-    font-weight: 500;
-    color: #2b6cb0;
-    font-size: 0.95rem; /* Adjusted for better hierarchy */
+/* Styling for nested headings (Sub-Section Titles within Experience) */
+.sub-section-header {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin: 25px 0 15px 0;
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 5px;
 }
 
 .item-details p {
     margin-bottom: 4px;
-    font-size: 0.9rem; /* Reverted paragraph size in details */
     color: #4a5568;
+    font-size: 0.92rem;
 }
 
-/* Text formatting classes */
+/* Text formatting classes derived from LaTeX data */
 .supervisor {
     font-size: 0.85rem;
     color: #718096;
@@ -239,19 +247,11 @@ body {
     font-weight: 600;
 }
 
+/* Bulleted lists for teaching duties */
 .duty-list {
     list-style: disc;
     margin-left: 20px;
     font-size: 0.9rem;
     color: #4a5568;
     margin-bottom: 10px;
-}
-
-.sub-section-header {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #4a5568;
-    margin: 25px 0 15px 0;
-    border-bottom: 1px solid #edf2f7;
-    padding-bottom: 5px;
 }
