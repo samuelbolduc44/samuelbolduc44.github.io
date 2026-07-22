@@ -1,0 +1,201 @@
+/* General Styling */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f6f5f3; /* Light background from the reference */
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 50px auto; /* Center the content */
+    padding: 0 20px;
+    gap: 20px; /* Space between sidebar and main content */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Soft shadow */
+    margin-bottom: 20px;
+}
+
+.profile-pic-container {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the circle */
+    border: 5px solid #fff; /* White border around the picture */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-card h1 {
+    font-family: 'Times New Roman', Times, serif; /* Seriph font from image */
+    font-weight: 500;
+    font-size: 2.2em;
+    margin: 0 0 10px 0;
+}
+
+.profile-card .title {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.profile-card .tags {
+    font-size: 0.9em;
+    color: #888;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    text-align: left;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #444;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info .icon {
+    margin-right: 10px;
+    color: #888;
+}
+
+/* Navigation */
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin-bottom: 10px;
+}
+
+.navigation li a {
+    display: block;
+    padding: 12px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    transition: background-color 0.3s ease;
+}
+
+.navigation li a:hover {
+    background-color: #faf8f5;
+}
+
+.navigation li.active a {
+    background-color: #faf3e8; /* Background color from reference */
+    color: #a67c52; /* Text color from reference */
+}
+
+/* Main Content Styling */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.content-card h2 {
+    color: #a67c52; /* Color from reference */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font from reference */
+    font-size: 1.1em;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.content-card p {
+    margin-bottom: 15px;
+}
+
+.content-card strong {
+    font-weight: 600;
+}
+
+.content-card a {
+    color: #a67c52;
+    text-decoration: none;
+}
+
+.content-card a:hover {
+    text-decoration: underline;
+}
+
+/* Specific styling for items with dates (Education, Publications) */
+.item {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 100px; /* Space for the date */
+}
+
+.item .date {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 80px;
+    text-align: right;
+    color: #a67c52; /* Color from reference */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+}
+
+.item h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.item p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.item p.description {
+    margin-top: 5px;
+    font-style: italic;
+    color: #777;
+}
