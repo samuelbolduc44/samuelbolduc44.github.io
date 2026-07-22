@@ -11,6 +11,7 @@ body {
     color: #2d3748;
     line-height: 1.6;
     padding: 40px 20px;
+    font-size: 15px; /* Reverted global font size */
 }
 
 /* --- MAIN CONTAINER LAYOUT --- */
@@ -140,7 +141,7 @@ body {
 
 .content-card h2 {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 0.95rem; /* Reverted h2 size */
     letter-spacing: 2px;
     color: #0a0e31; /* Titles dark blue */
     text-transform: uppercase;
@@ -149,8 +150,6 @@ body {
 
 .content-card p {
     margin-bottom: 16px;
-    font-size: 0.98rem;
-    color: #2d3748;
 }
 
 .content-card a {
@@ -165,7 +164,8 @@ body {
 /* --- LIST ITEM LAYOUT (Dates & Details) --- */
 .item {
     display: grid;
-    grid-template-columns: 120px 1fr; /* Space for the date */
+    /* Increased margin for the left column for long location text */
+    grid-template-columns: 140px 1fr;
     gap: 16px;
     margin-bottom: 24px;
 }
@@ -178,32 +178,53 @@ body {
     }
 }
 
-.item .date {
+/* Container for date and location text in left column */
+.item-meta {
+    display: flex;
+    flex-direction: column;
+    text-align: right; /* Aligned right to main content */
+}
+
+@media (max-width: 600px) {
+    .item-meta {
+        text-align: left;
+    }
+}
+
+.item-meta .date {
     font-family: monospace;
     font-size: 0.85rem;
     color: #0a0e31; /* Date color blue */
     font-weight: 600;
     padding-top: 2px;
-    text-align: right;
 }
 
-@media (max-width: 600px) {
-    .item .date {
-        text-align: left;
-    }
+/* Specific styling for location text in left column */
+.item-meta .location {
+    font-size: 0.82rem; /* Adjusted size */
+    color: #718096; /* Muted grey */
+    margin-top: 4px;
+    line-height: 1.4;
 }
 
 .item-details h3 {
-    font-size: 1.05rem;
+    font-size: 1rem; /* Reverted h3 size */
     font-weight: 600;
     color: #1a202c;
     margin-bottom: 4px;
 }
 
+/* Styling for publication details (H3 within main details) */
+.item-details h3 a {
+    font-weight: 500;
+    color: #2b6cb0;
+    font-size: 0.95rem; /* Adjusted for better hierarchy */
+}
+
 .item-details p {
     margin-bottom: 4px;
+    font-size: 0.9rem; /* Reverted paragraph size in details */
     color: #4a5568;
-    font-size: 0.92rem;
 }
 
 /* Text formatting classes */
