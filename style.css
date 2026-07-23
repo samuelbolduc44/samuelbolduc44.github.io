@@ -255,3 +255,38 @@ body {
     color: #4a5568;
     margin-bottom: 10px;
 }
+
+/* --- STACKED LAYOUT OVERRIDES FOR PROJECTS --- */
+.item.stacked-layout {
+    display: flex;
+    flex-direction: column; /* Force full-width row-by-row stacking */
+    gap: 12px;
+    padding-left: 0; /* Remove side padding offset */
+    margin-bottom: 35px;
+}
+
+/* Ensure child containers inside stacked layout take full width */
+.item.stacked-layout .item-details,
+.item.stacked-layout .item-meta,
+.item.stacked-layout .row-image {
+    width: 100%;
+    text-align: left; /* Reset any right-align from sidebar grid */
+}
+
+/* Constrain and style project images */
+.project-img {
+    max-width: 500px; /* Limits massive image size */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    margin: 8px 0;
+    display: block;
+}
+
+/* Small, subtle font for citations */
+.citation {
+    font-size: 0.85rem;
+    color: #718096;
+    font-style: italic;
+}
