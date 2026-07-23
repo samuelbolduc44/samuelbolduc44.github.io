@@ -18,7 +18,7 @@
             <!-- Ensure your image file photo.jpg is in the same folder -->
             <img src="SamB-2.jpg" alt="Samuel Bolduc-St-Aubin" class="profile-pic">
             <h1>Samuel Bolduc-St-Aubin</h1>
-            <p class="title">Mathematician & Aspiring Data Scientist / Climate Researcher</p>
+            <p class="title">Mathematician & Data Scientist / Climate Researcher</p>
             <p class="tags">Applied Mathematics • Data Science • Climate Modeling • Numerical Analysis • Dynamical Systems</p>
             
             <div class="contact-info">
@@ -111,6 +111,78 @@
                 <div class="item-details">
                     <h3>B.Sc., (First Class) Honours Applied Mathematics</h3>
                     <p>McGill University</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="content-card">
+            <h2>PROJECTS</h2>
+
+            <!-- Project 1 (with new image link) -->
+            <div class="item">
+                <h3>Julia code to compute rotation numbers of the periodically forced delay differential equation</h3>
+                
+                <!-- NEW: This is the command to link 'project.jpg'. 
+                     Ensure this file is uploaded to your main repository folder. -->
+                <img src="project.jpg" alt="Rotation Number Phase Portrait Diagram" class="project-img">
+
+                <p>
+                    This project computes the rotation numbers of the pfS&S DDE via stroboscopic-section in a two parameters space. Loosely, the rotation number $\rho$ is the ratio between the frequencies of the two interacting oscillations at play: the external forcing (period $T_{\omega} = 2\pi/\gamma$) and the system's own delay-induced oscillation. On an attracting invariant torus, $\rho$ characterizes the type of motion on the torus — rational $\rho = p/q$ corresponds to mode locking (a periodic orbit that closes after $q$ forcing periods), irrational $\rho$ corresponds to quasiperiodic motion that never exactly closes.
+                </p>
+                <p>
+                    <a href="https://github.com/samuelbolduc44/pfDDE-Rotation-Number" target="_blank">View on GitHub</a>
+                </p>
+                <p class="supervisor">
+                    From paper: Resonance structure of a periodically forced delay differential equation model for the El Niño–Southern Oscillation, Bolduc-St-Aubin, S., Subramanian, P., and Krauskopf, B., arXiv: 2607.00386
+                </p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="item">
+                <h3>Compute local max of pfDDE</h3>
+                <p>
+                    This repository contains a Julia script for generating bifurcation diagrams of a scalar (potentially non-autonomous) delay differential equation. The script solves the delay differential equation for a sequence of delay values and records the local maxima of the long-time solution to construct a classical bifurcation diagram.
+                </p>
+                <p>
+                    <a href="https://github.com/samuelbolduc44/Compute_local_max_of_pfDDE" target="_blank">View on GitHub</a>
+                </p>
+            </div>
+
+            <!-- --- SUBSECTION START: Current Working Project --- -->
+            <div class="sub-section">
+                <h2 class="sub-section-header">Current Working Project</h2>
+
+                <!-- Moving last two projects inside this section -->
+                <div class="item">
+                    <h3>Comprehensive bifrucation analysis of the pfSS model</h3>
+                    <p>
+                        We perform a comprehensive bifurcation analysis of the proposed pfSS model, with the nonlinearity strength treated as the primary continuation parameter to systematically map the system’s dynamical repertoire. This project is done with the continuation package DDEBIFTOOL in MATLAB.
+                    </p>
+                    <p class="supervisor">
+                        Extending the work from the paper: Resonance structure of a periodically forced delay differential equation model for the El Niño–Southern Oscillation, Bolduc-St-Aubin, S., Subramanian, P., and Krauskopf, B., arXiv: 2607.00386
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>Generalization of Feedback with implicit state-dependent delay in a conceptual model of El Niño</h3>
+                    <p>
+                        Generalization of the paper for arbitrarly number of nestings and for arbtrary bounded and measurable functions.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>Generalization of Seasonal forcing dominated dynamics of a piecewise smooth Ghil-Zaliapin-Thompson ENSO model</h3>
+                    <p>
+                        Generalization for general periodic orbit.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>Work on unified growth theory</h3>
+                    <p>
+                        Analyzing the dsicrete-time dynamical system.
+                    </p>
                 </div>
             </div>
         </section>
