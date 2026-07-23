@@ -97,6 +97,17 @@ body {
     text-decoration: underline;
 }
 
+/* Highlights the "View Projects" link in the contact-info block */
+.contact-info a.projects-link {
+    font-weight: 600;
+}
+
+/* Marks the Projects link as the current page when on projects.html */
+.contact-info a.projects-link.active {
+    color: #90cdf4;
+    text-decoration: underline;
+}
+
 /* --- Navigation Links styling --- */
 .navigation ul {
     list-style: none;
@@ -139,6 +150,7 @@ body {
     padding: 32px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     border: 1px solid #e2e8f0;
+    position: relative;
 }
 
 .content-card h2 {
@@ -163,6 +175,15 @@ body {
 
 .content-card a:hover {
     text-decoration: underline;
+}
+
+/* Back-to-home link shown at the top of the standalone Projects page */
+.back-link {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2b6cb0;
 }
 
 /* --- LIST ITEM LAYOUT (Dates in left col, details in right) --- */
@@ -256,7 +277,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* --- STACKED LAYOUT OVERRIDES FOR PROJECTS --- */
+/* --- STACKED LAYOUT OVERRIDES FOR PROJECTS (also used by Current Working Project items) --- */
 .item.stacked-layout {
     display: flex;
     flex-direction: column; /* Force full-width row-by-row stacking */
