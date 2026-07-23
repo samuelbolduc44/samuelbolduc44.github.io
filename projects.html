@@ -8,6 +8,19 @@
     <!-- This line tells the HTML to load the style.css file -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- MathJax: renders the LaTeX ($...$ and \begin{equation}...\end{equation}) in the project descriptions -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                packages: {'[+]': ['ams']}
+            },
+            loader: { load: ['[tex]/ams'] }
+        };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.js" defer></script>
+
 </head>
 <body>
 
@@ -119,11 +132,6 @@
                         <h3>Comprehensive bifurcation analysis of the pfSS model</h3>
                     </div>
 
-                    <!-- Row 2: Image -->
-                    <div class="row-image" style="text-align: center;">
-                        <img src="project3.jpg" alt="Computation of the maximal Lyapunov exponents" class="project-img">
-                    </div>
-
                     <!-- Row 2: Details Paragraph (Below Title) -->
                     <div class="item-meta row-details">
                         <p>
@@ -150,6 +158,24 @@
                         <p>
                             Generalization of the paper for arbitrarly number of nestings and for arbtrary bounded and measurable functions.
                         </p>
+                        <p>
+                            In state-dependent delayed negative feedback systems, the delay is often not a prescribed function of the current state but rather the solution of an implicit algebraic equation<sup class="cite-ref">[1]</sup>. Indeed, consider a feedback signal that departs at time $t$ and returns after a lag $\sigma$, arriving at time $s = t + \sigma$. If the travel time is a reference lag $\bar\tau$ corrected by a state-dependent response at the moment of departure, then $\sigma = \bar\tau+\lambda(h(t))$. But since $t = s - \sigma$, the departure state satisfies $h(t) = h(s-\sigma)$, and the lag equation becomes $\sigma = \bar\tau+\lambda(h(s-\sigma))$. Renaming $s$ by $t$, the delay $\sigma(t)$ satisfies $\sigma(t) = \bar\tau+\lambda(h(t-\sigma(t)))$, and the system takes the form
+                        </p>
+                        <div class="equation-block">
+                            \begin{equation}
+                            \label{eq:ddeimplicit}
+                            \left.
+                            \begin{aligned}
+                                h'(t) &= f(h(t-\sigma(t))), \\
+                                0  &= \bar\tau+\lambda(h(t-\sigma(t))) - \sigma(t).
+                            \end{aligned}
+                            \right\}
+                            \end{equation}
+                        </div>
+                        <p>
+                            The delay $\sigma(t)$ determines which past moment $t-\sigma(t)$ is relevant, but the state at that moment in turn determines $\sigma(t)$: neither can be found independently of the other, and both must be determined simultaneously as a self-consistent pair.
+                        </p>
+                        <p class="citation">[1] Walther, H.-O. (2014). Topics in delay differential equations. <em>Jahresbericht der Deutschen Mathematiker-Vereinigung</em>, 116(2), 87–114.</p>
                     </div>
                 </div>
 
@@ -158,13 +184,9 @@
                     <div class="item-details row-title">
                         <h3>Generalization of Seasonal forcing dominated dynamics of a piecewise smooth Ghil-Zaliapin-Thompson ENSO model</h3>
                     </div>
-                    <!-- Row 2: Image -->
-                    <div class="row-image" style="text-align: center;">
-                        <img src="project4.jpg" alt="Analytical construction of resonance tongues in the psGZT model; a periodically forced piecewise smooth delay differential model" class="project-img">
-                    </div>
                     <div class="item-meta row-details">
                         <p>
-                            Stability of a periodic orbit can be assessed by studying how small perturbations evolve under the dynamics. For a symmetric $n$:$s$-periodic orbit, this reduces to tracking the evolution of the orbit’s nondegenerate zeros. By analyzing how the zeros of a perturbed orbit shift over one period, we obtain a linear recurrence relation. The associated linear map determines the Floquet multipliers, which reveal whether perturbations decay or amplify.
+                            Generalization for general periodic orbit.
                         </p>
                     </div>
                 </div>
