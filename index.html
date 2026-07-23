@@ -120,23 +120,38 @@
             <h2>PROJECTS</h2>
 
             <!-- Project 1 (with new image link) -->
-            <div class="item">
-                <h3>Julia code to compute rotation numbers of the periodically forced delay differential equation</h3>
+            <!-- --- Project 1 (Stacked, Full-Width Layout) --- -->
+            <div class="item stacked-layout">
                 
-                <!-- NEW: This is the command to link 'project.jpg'. 
-                     Ensure this file is uploaded to your main repository folder. -->
-                <img src="project.jpg" alt="Rotation Number Phase Portrait Diagram" class="project-img">
+                <!-- Row 1: Title -->
+                <div class="item-details row-title">
+                    <h3>Julia code to compute rotation numbers of the periodically forced delay differential equation</h3>
+                </div>
 
-                <p>
-                    This project computes the rotation numbers of the pfS&S DDE via stroboscopic-section in a two parameters space. Loosely, the rotation number $\rho$ is the ratio between the frequencies of the two interacting oscillations at play: the external forcing (period $T_{\omega} = 2\pi/\gamma$) and the system's own delay-induced oscillation. On an attracting invariant torus, $\rho$ characterizes the type of motion on the torus — rational $\rho = p/q$ corresponds to mode locking (a periodic orbit that closes after $q$ forcing periods), irrational $\rho$ corresponds to quasiperiodic motion that never exactly closes.
-                </p>
-                <p>
-                    <a href="https://github.com/samuelbolduc44/pfDDE-Rotation-Number" target="_blank">View on GitHub</a>
-                </p>
-                <p class="supervisor">
-                    From paper: Resonance structure of a periodically forced delay differential equation model for the El Niño–Southern Oscillation, Bolduc-St-Aubin, S., Subramanian, P., and Krauskopf, B., arXiv: 2607.00386
-                </p>
+                <!-- Row 2: Image -->
+                <div class="row-image">
+                    <img src="project.jpg" alt="Rotation Number Phase Portrait Diagram" class="project-img">
+                </div>
+
+                <!-- Row 3: Details & GitHub Link -->
+                <div class="item-meta row-details">
+                    <p>
+                        This project computes the rotation numbers of the pfS&amp;S DDE via stroboscopic-section in a two parameters space. Loosely, the rotation number $\rho$ is the ratio between the frequencies of the two interacting oscillations at play: the external forcing (period $T_{\omega} = 2\pi/\gamma$) and the system's own delay-induced oscillation. On an attracting invariant torus, $\rho$ characterizes the type of motion on the torus — rational $\rho = p/q$ corresponds to mode locking (a periodic orbit that closes after $q$ forcing periods), irrational $\rho$ corresponds to quasiperiodic motion that never exactly closes.
+                    </p>
+                    <p>
+                        <a href="https://github.com/samuelbolduc44/pfDDE-Rotation-Number" target="_blank">View on GitHub</a>
+                    </p>
+                </div>
+
+                <!-- Row 4: Citation -->
+                <div class="item-meta row-citation">
+                    <p class="citation">
+                        From paper: Resonance structure of a periodically forced delay differential equation model for the El Niño–Southern Oscillation, Bolduc-St-Aubin, S., Subramanian, P., and Krauskopf, B., arXiv: 2607.00386
+                    </p>
+                </div>
+
             </div>
+            <!-- --- End Project 1 --- -->
 
             <!-- Project 2 -->
             <div class="item">
@@ -153,16 +168,30 @@
             <div class="sub-section">
                 <h2 class="sub-section-header">Current Working Project</h2>
 
-                <!-- Moving last two projects inside this section -->
-                <div class="item">
-                    <h3>Comprehensive bifrucation analysis of the pfSS model</h3>
+                <!-- --- Project Block (Stacked, Full-Width) --- -->
+            <div class="item stacked-layout">
+                
+                <!-- Row 1: Title (Full Width, Bold) -->
+                <div class="item-details row-title">
+                    <h3>Comprehensive bifurcation analysis of the pfSS model</h3>
+                </div>
+                
+                <!-- Row 2: Details Paragraph (Below Title) -->
+                <div class="item-meta row-details">
                     <p>
                         We perform a comprehensive bifurcation analysis of the proposed pfSS model, with the nonlinearity strength treated as the primary continuation parameter to systematically map the system’s dynamical repertoire. This project is done with the continuation package DDEBIFTOOL in MATLAB.
                     </p>
-                    <p class="supervisor">
+                </div>
+                
+                <!-- Row 3: Citation (Below Details) -->
+                <div class="item-meta row-citation">
+                    <p class="citation">
                         Extending the work from the paper: Resonance structure of a periodically forced delay differential equation model for the El Niño–Southern Oscillation, Bolduc-St-Aubin, S., Subramanian, P., and Krauskopf, B., arXiv: 2607.00386
                     </p>
                 </div>
+                
+            </div>
+            <!-- --- End Project Block --- -->
 
                 <div class="item">
                     <h3>Generalization of Feedback with implicit state-dependent delay in a conceptual model of El Niño</h3>
