@@ -79,7 +79,7 @@
                 <!-- Row 3: Description & Link -->
                 <div class="item-meta">
                     <p>
-                        This project computes the rotation numbers of the pfS&S DDE via stroboscopic-section in a two parameters space. Loosely, the rotation number $\rho$ is the ratio between the frequencies of the two interacting oscillations at play: the external forcing (period $T_{\omega} = 2\pi/\gamma$) and the system's own delay-induced oscillation. On an attracting invariant torus, $\rho$ characterizes the type of motion on the torus — rational $\rho = p/q$ corresponds to mode locking (a periodic orbit that closes after $q$ forcing periods), irrational $\rho$ corresponds to quasiperiodic motion that never exactly closes.
+                        This project computes the rotation numbers of the pfS&S DDE via stroboscopic-section in a two parameters space. Loosely, the rotation number $\rho$ is the ratio between the frequencies of the two interacting oscillations at play: the external forcing (period $T_{\omega} = 2\pi/\omega$) and the system's own delay-induced oscillation. On an attracting invariant torus, $\rho$ characterizes the type of motion on the torus — rational $\rho = p/q$ corresponds to mode locking (a periodic orbit that closes after $q$ forcing periods), irrational $\rho$ corresponds to quasiperiodic motion that never exactly closes. The key idea is to iterate the Poincar\'{e} map until the final point is in a small neighborhood of the first point on $\mathcal{I}$. The rotation number $\rho$ is then the average angular displacement over one full finite orbit of $\mathcal{P}$.  Adapting this approach to the DDE setting faces two new difficulties. First, the return condition cannot be imposed solely on the headpoints in the Poincar\'{e} section, but must be formulated in the full function space $\mathcal{C}_\tau$ to ensure that entire solution segments are close. Second, since the dynamics evolves in an infinite-dimensional space, a suitable projection onto $\mathbb{R}^2$ is required in order to define and compute the angle increments.
                     </p>
                     <p style="margin-top: 8px;">
                         <a href="https://github.com/samuelbolduc44/pfDDE-Rotation-Number" target="_blank">View on GitHub</a>
@@ -132,10 +132,15 @@
                         <h3>Comprehensive bifurcation analysis of the pfSS model</h3>
                     </div>
 
+                    <!-- Row 2: Image -->
+                    <div class="row-image" style="text-align: center;">
+                        <img src="project3.jpg" alt="Maximal Lyapunov Exponent" class="project-img">
+                    </div>
+
                     <!-- Row 2: Details Paragraph (Below Title) -->
                     <div class="item-meta row-details">
                         <p>
-                            We perform a comprehensive bifurcation analysis of the proposed pfSS model, with the nonlinearity strength treated as the primary continuation parameter to systematically map the system's dynamical repertoire. This project is done with the continuation package DDEBIFTOOL in MATLAB.
+                            We perform a comprehensive bifurcation analysis of the proposed pfSS model, with the nonlinearity strength treated as the primary continuation parameter to systematically map the system's dynamical landscape. This project is done with the continuation package DDEBIFTOOL in MATLAB.  We demonstrate that chaos emerges via overlapping resonance tongues, bringing the model's behavior closer to the variability observed in ENSO. This perspective is consistent with previous studies in which rich dynamics were found in the low-frequency regime.
                         </p>
                     </div>
 
@@ -173,7 +178,7 @@
                             \end{equation}
                         </div>
                         <p>
-                            The delay $\sigma(t)$ determines which past moment $t-\sigma(t)$ is relevant, but the state at that moment in turn determines $\sigma(t)$: neither can be found independently of the other, and both must be determined simultaneously as a self-consistent pair.
+                            The delay $\sigma(t)$ determines which past moment $t-\sigma(t)$ is relevant, but the state at that moment in turn determines $\sigma(t)$: neither can be found independently of the other, and both must be determined simultaneously as a self-consistent pair. Our main result focuses on the regime where the implicit fixed-point problem is contractive. In this regime, delayed state dependence is dynamically invisible: introducing the implicit delay does not change the solution of the constant-delay problem. 
                         </p>
                         <p class="citation">[1] Walther, H.-O. (2014). Topics in delay differential equations. <em>Jahresbericht der Deutschen Mathematiker-Vereinigung</em>, 116(2), 87–114.</p>
                     </div>
@@ -184,9 +189,13 @@
                     <div class="item-details row-title">
                         <h3>Generalization of Seasonal forcing dominated dynamics of a piecewise smooth Ghil-Zaliapin-Thompson ENSO model</h3>
                     </div>
+                    <!-- Row 2: Image -->
+                    <div class="row-image" style="text-align: center;">
+                        <img src="project4.jpg" alt="Resonance tongues of the piecewise-smooth DDE." class="project-img">
+                    </div>
                     <div class="item-meta row-details">
                         <p>
-                            Generalization for general periodic orbit.
+                            Stability of a periodic orbit can be assessed by studying how small perturbations evolve under the dynamics. For a symmetric $n$:$s$-periodic orbit, this reduces to tracking the evolution of the orbit’s nondegenerate zeros. By analyzing how the zeros of a perturbed orbit shift over one period, we obtain a linear recurrence relation.
                         </p>
                     </div>
                 </div>
