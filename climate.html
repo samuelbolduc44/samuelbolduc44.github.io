@@ -63,14 +63,14 @@
         <!-- Change id="projects" to id="climate" -->
         <section id="climate" class="content-card">
             <a href="index.html" class="back-link">&larr; Back to Home</a>
-            <h2>UNDER CONSTRUCTION : CLIMATE MODELLING</h2>
+            <h2>The El Niño-Southern Oscillation (ENSO)</h2>
 
            <!-- --- Project 1 (Stacked Full Width) --- -->
             <div class="item stacked-layout">
 
                 <!-- Row 1: Title -->
                 <div class="item-details">
-                    <h3>Julia code to compute rotation numbers of a periodically forced delay differential equation</h3>
+                    <h3>What is ENSO?</h3>
                 </div>
 
                 <!-- Row 2: Image -->
@@ -81,7 +81,7 @@
                 <!-- Row 3: Description & Link -->
                 <div class="item-meta">
                     <p>
-                        This project computes the rotation numbers of the pfS&S DDE via stroboscopic-section in a two parameters space. Loosely, the rotation number $\rho$ is the ratio between the frequencies of the two interacting oscillations at play: the external forcing (period $T_{\omega} = 2\pi/\omega$) and the system's own delay-induced oscillation. On an attracting invariant torus, $\rho$ characterizes the type of motion on the torus — rational $\rho = p/q$ corresponds to mode locking (a periodic orbit that closes after $q$ forcing periods), irrational $\rho$ corresponds to quasiperiodic motion that never exactly closes. The key idea is to iterate the Poincar\'{e} map until the final point is in a small neighborhood of the first point on $\mathcal{I}$. The rotation number $\rho$ is then the average angular displacement over one full finite orbit of $\mathcal{P}$.  Adapting this approach to the DDE setting faces two new difficulties. First, the return condition cannot be imposed solely on the headpoints in the Poincare section, but must be formulated in the full function space $\mathcal{C}_\tau$ to ensure that entire solution segments are close. Second, since the dynamics evolves in an infinite-dimensional space, a suitable projection onto $\mathbb{R}^2$ is required in order to define and compute the angle increments. The computation of the rotation number $\rho$ of a DDE in parameter space is effective. For instance, the grid in the $(\tau,c)$-plane for the pfS&S model shown in our paper requires $768{,}000$ rotation number computations in total, taking approximately $8$ hours with the third-order Adams--Bashforth method in Julia without parallelization on an Apple M1 (16\,GB).
+                        The El Niño-Southern Oscillation (ENSO) is a complex and significant climate phenomenon that influences weather patterns globally. Characterized by variations in sea surface temperatures (SSTs) and atmospheric pressure across the equatorial Pacific Ocean, ENSO manifests itself primarily in two phases: El Niño, with systematically warmer-than-average SSTs, and La Niña, with cooler-than-average SSTs in the eastern Pacific Ocean.  These events have a profound impact on global climate, altering weather patterns, ocean conditions, and atmospheric pressure systems. Such changes can have widespread consequences for agriculture, water resources, and socioeconomic systems worldwide.
                     </p>
                     <p style="margin-top: 8px;">
                         <a href="https://github.com/samuelbolduc44/pfDDE-Rotation-Number" target="_blank">View on GitHub</a>
@@ -102,7 +102,7 @@
 
                 <!-- Row 1: Title -->
                 <div class="item-details">
-                    <h3>Compute local maxima of a delay differential equation</h3>
+                    <h3>The delayed-action oscillator (DAO)</h3>
                 </div>
 
                 <!-- Row 2: Image -->
