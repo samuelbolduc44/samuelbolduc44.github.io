@@ -153,7 +153,7 @@
 
                 <!-- Row 1: Title -->
                 <div class="item-details">
-                    <h3>A `pplane`-style interactive phase-plane tool, adapted for a scalar delay differential equation</h3>
+                    <h3>A pplane-style interactive phase-plane tool, adapted for a scalar delay differential equation</h3>
                 </div>
 
                 <!-- Row 2: Image -->
@@ -163,7 +163,7 @@
 
                 <!-- Row 3: Description & Link -->
                 <div class="item-meta">
-                    <p> DDEPlane is an interactive MATLAB tool, inspired by PPLANE, that visualises trajectories of scalar delay differential equations with one constant delay by interpreting a mouse click as a linear initial history on the delay interval. Unlike a true 2D ODE phase plane, the plotted curve is a projection of an infinite-dimensional state onto two coordinates, so self-intersections are normal and the background arrows show only the vertical direction (not a full vector field). Trajectories are integrated forward only (backward integration is ill-posed for DDEs), and a visible kink often appears at t=τ due to inconsistency between the chosen linear history and the DDE's derivative.
+                    <p> DDEPlane is an interactive MATLAB tool, inspired by PPLANE, that visualises trajectories of scalar delay differential equations with one constant delay $\tau$ by interpreting a mouse click as a linear initial history $\varphi\in C([-\tau,0],\mathbb{R})$ on the delay interval $[-\tau,0]$. Unlike a true 2D ODE phase plane, the plotted curve is a projection of an infinite-dimensional state onto two coordinates, so self-intersections are normal and the background arrows show only the vertical direction (not a full vector field). Trajectories are integrated forward only (backward integration is ill-posed for DDEs), and a visible kink often appears at $t=\tau$ due to inconsistency between the chosen linear history and the DDE's derivative.
                     </p>
                     <p style="margin-top: 8px;">
                         <a href="https://github.com/samuelbolduc44/Interactive_DDE_solver" target="_blank">View on GitHub</a>
